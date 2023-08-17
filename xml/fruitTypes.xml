@@ -56,7 +56,7 @@
         <fruitTypeCategory name="MAIZEHEADER">MAIZE SUNFLOWER</fruitTypeCategory>
         <fruitTypeCategory name="MAIZECUTTER">MAIZE WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER</fruitTypeCategory>
         <fruitTypeCategory name="DIRECTCUTTER">GRASS WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="PICKUP">GRASS CANOLA2 WHEAT2 BARLEY2 OAT2</fruitTypeCategory>
+        <fruitTypeCategory name="PICKUP">GRASS WHEAT BARLEY OAT CANOLA2 WHEAT2 BARLEY2 OAT2</fruitTypeCategory>
         <fruitTypeCategory name="SOWINGMACHINE">WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM OILSEEDRADISH GRASS</fruitTypeCategory>
         <fruitTypeCategory name="SUGARCANE_PLANTER">SUGARCANE</fruitTypeCategory>
         <fruitTypeCategory name="PLANTER">MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON</fruitTypeCategory>
@@ -81,6 +81,14 @@
             <converter from="BARLEY"    to="BARLEY_WINDROW" factor="1.0" windrowFactor="1.0" />
             <converter from="OAT"       to="OAT_WINDROW"   factor="1.0" windrowFactor="1.0" />
 			<converter from="CANOLA"    to="CANOLA_WINDROW"  factor="1.0" windrowFactor="1.0" />
+        </fruitTypeConverter>
+        <!-- MaizePlus -->
+        <fruitTypeConverter name="MOWERCONDITIONER">
+            <converter from="GRASS"		to="GRASS_WINDROW"		factor="1.0"	windrowFactor="1.0"/>
+            <converter from="MEADOW"	to="GRASS_WINDROW"		factor="1.0"	windrowFactor="1.0"/>
+            <converter from="WHEAT"		to="CROP_WINDROW"		factor="1.0"	windrowFactor="1.0"/>
+            <converter from="BARLEY"	to="CROP_WINDROW"		factor="1.0"	windrowFactor="1.0"/>
+            <converter from="OAT"		to="CROP_WINDROW"		factor="1.0"	windrowFactor="1.0"/>
         </fruitTypeConverter>
     </fruitTypeConverters>
 </map>

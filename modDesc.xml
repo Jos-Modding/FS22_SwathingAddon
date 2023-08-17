@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="73">
+<modDesc descVersion="74">
     <author>Jos, Bcbuhler Farms</author>
-    <version>1.0.0.0</version>
+    <version>1.1.0.0</version>
     <title>
         <en>Swathing Addon</en>
         <de>Schwad-Addon</de>
@@ -16,6 +16,9 @@ After mowing be sure to use the pickup header to harvest your swaths and enjoy t
 Things to note:
 - The basegame hired worker will not be able to swath or harvest swaths for you. However Courseplay is a great option that can do both jobs if you reuse your swathing course to harvest.
 - May conflict with other crop adjusting mods.
+
+Changelog 1.1.0.0
+- AI helper can be used for swathing.
 ]]>
 		</en>
 		<de><![CDATA[Das Schwad-Addon bringt die Schwadfunktionen, die zuerst auf der Edgewater Saskatchewan veröffentlicht wurden, auf jede Karte. Die schwadbaren Fruchtarten sind Weizen, Gerste, Hafer und Raps.
@@ -27,12 +30,16 @@ Verwenden Sie nach dem Mähen unbedingt den Erntevorsatz, um Ihre Schwaden zu er
 Zu beachten:
 - Die im Basisspiel eingestellten Helfer sind nicht in der Lage, Schwaden für dich zu mähen oder zu ernten. Courseplay ist jedoch eine großartige Option, die beide Aufgaben übernehmen kann, wenn Sie Ihre Schwadbahn zum Ernten wiederverwenden.
 - Kann mit anderen Mods zur Anpassung der Ernte in Konflikt geraten.
+
+Changelog 1.1.0.0
+- AI Helfer können zum Schwaden eingesetzt werden.
 ]]>
 		</de>
 	</description>
     <iconFilename>icon_SwathingAddon.dds</iconFilename>
     <multiplayer supported="true" />
     <extraSourceFiles>
+        <sourceFile filename="scripts/register.lua" />
         <sourceFile filename="scripts/SwathingAddon.lua" />
     </extraSourceFiles>
     <dependencies>
