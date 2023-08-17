@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pickupEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/effects/pickup/sharedPickupArrayIN.png"/>
+    <File fileId="7" filename="$data/effects/unload/gradient_diffuse.png"/>
+    <File fileId="1" filename="$data/fillPlanes/straw_diffuse.png"/>
+    <File fileId="2" filename="$data/fillPlanes/straw_normal.dds"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="3" filename="$data/shared/default_specular.png"/>
+    <File fileId="8" filename="canolastraw_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="silage_mat" materialId="5" customShaderId="4" customShaderVariation="alphaMapGradient_cosOffsetY_scaleByLife">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+      <CustomParameter name="sizeScale" value="1 1 0 0"/>
+    </Material>
+    <Material name="straw_mat" materialId="6" customShaderId="4" customShaderVariation="alphaMapGradient_cosOffsetY_scaleByLife">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="1.5 -1.5 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+      <CustomParameter name="sizeScale" value="1 1 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pickupIN.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="pickupEffects_particleMeshesIN" nodeId="16">
+        <TransformGroup name="pickupEffects_particleMeshesIN_meshes" nodeId="17">
+          <Shape shapeId="1" name="pickupEffects_particleMeshesIN_nr9_rl11_v1" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="pickupEffects_particleMeshesIN_nr10_rl5_v1" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="pickupEffects_particleMeshesIN_nr10_rl15_v1" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="pickupEffects_particleMeshesIN_nr10_rl10_v1" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="pickupEffects_particleMeshesIN_nr12_rl10_v1" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="pickupEffects_particleMeshesIN_nr14_rl10_v1" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="pickupEffects_particleMeshesIN_nr16_rl15_v1" nodeId="24" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="pickupEffects_particleMeshesIN_materials" nodeId="25">
+          <Shape shapeId="8" name="straw" clipDistance="300" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="canola_windrow" clipDistance="300" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/fillTypes.xsd">
+    <fillTypes>
+        <fillType name="CANOLA2" title="$l10n_fillType_canola" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.65" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.74">
+                <factors>
+                    <factor period="1"  value="1.07" />
+                    <factor period="2"  value="0.99" />
+                    <factor period="3"  value="0.94" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.81" />
+                    <factor period="6"  value="0.86" />
+                    <factor period="7"  value="0.99" />
+                    <factor period="8"  value="1.08" />
+                    <factor period="9"  value="1.13" />
+                    <factor period="10" value="1.21" />
+                    <factor period="11" value="1.08" />
+                    <factor period="12" value="1.22" />
+                </factors>
+            </economy>
+            <effects fruitSmokeColor="0.3006 0.1651 0.0630 1.0000"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_canola.png" />
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures   diffuse ="$data/fillPlanes/canola_diffuse.png"
+                        normal  ="$data/fillPlanes/canola_normal.png"
+                        specular="$data/fillPlanes/canola_specular.png"
+                        distance="$data/fillPlanes/distance/canolaDistance_diffuse.png" />
+        </fillType>
+        <fillType name="CANOLA_WINDROW" title="$l10n_fillType_canola" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.21" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.045">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.02" />
+                    <factor period="3"  value="0.96" />
+                    <factor period="4"  value="0.93" />
+                    <factor period="5"  value="0.9" />
+                    <factor period="6"  value="0.9" />
+                    <factor period="7"  value="0.93" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.05" />
+                    <factor period="10" value="1.08" />
+                    <factor period="11" value="1.11" />
+                    <factor period="12" value="1.11" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_straw.png" />
+            <textures   diffuse ="maps/textures/foliage/canola_windrow/canola_windrow_diffuse.png"
+                        normal  ="maps/textures/foliage/canola_windrow/canola_windrow_normal.png"
+                        specular="maps/textures/foliage/canola_windrow/canola_windrow_specular.png"
+                        distance="$data/fillPlanes/distance/strawDistance_diffuse.png" />
+        </fillType>
+        <fillType name="WHEAT_WINDROW" title="Wheat Swath" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.06" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.041">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_straw.png" />
+            <textures   diffuse ="maps/textures/foliage/canola_windrow/wheat_windrow_diffuse.png"
+                        normal  ="maps/textures/foliage/canola_windrow/wheat_windrow_normal.png"
+                        specular="maps/textures/foliage/canola_windrow/wheat_windrow_specular.png"
+                        distance="$data/fillPlanes/distance/strawDistance_diffuse.png" />
+        </fillType>
+        <fillType name="BARLEY_WINDROW" title="Barley Swath" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.06" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.041">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_straw.png" />
+            <textures   diffuse ="maps/textures/foliage/canola_windrow/barley_windrow_diffuse.png"
+                        normal  ="maps/textures/foliage/canola_windrow/barley_windrow_normal.png"
+                        specular="maps/textures/foliage/canola_windrow/barley_windrow_specular.png"
+                        distance="$data/fillPlanes/distance/strawDistance_diffuse.png" />
+        </fillType>
+        <fillType name="OAT_WINDROW" title="Oat Swath" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.06" maxPhysicalSurfaceAngle="50" />
+            <economy pricePerLiter="0.041">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_straw.png" />
+            <textures   diffuse ="maps/textures/foliage/canola_windrow/oat_windrow_diffuse.png"
+                        normal  ="maps/textures/foliage/canola_windrow/oat_windrow_normal.png"
+                        specular="maps/textures/foliage/canola_windrow/oat_windrow_specular.png"
+                        distance="$data/fillPlanes/distance/strawDistance_diffuse.png" />
+        </fillType>
+        <fillType name="WHEAT2" title="Wheat Swathable" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.79" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.42">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_wheat.png" />
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures   diffuse ="$data/fillPlanes/wheat_diffuse.png"
+                        normal  ="$data/fillPlanes/wheat_normal.png"
+                        specular="$data/fillPlanes/wheat_specular.png"
+                        distance="$data/fillPlanes/distance/wheatDistance_diffuse.png" />
+        </fillType>
+        <fillType name="BARLEY2" title="Barley Swathable" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.62" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.25">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_barley.png" />
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures   diffuse ="$data/fillPlanes/barley_diffuse.png"
+                        normal  ="$data/fillPlanes/barley_normal.png"
+                        specular="$data/fillPlanes/barley_specular.png"
+                        distance="$data/fillPlanes/distance/barleyDistance_diffuse.png" />
+        </fillType>
+        <fillType name="OAT2" title="Oat Swathable" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.42" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.26">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_oat.png" />
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures   diffuse ="$data/fillPlanes/oat_diffuse.png"
+                        normal  ="$data/fillPlanes/oat_normal.png"
+                        specular="$data/fillPlanes/oat_specular.png"
+                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" />
+        </fillType>
+    </fillTypes>
+
+    <fillTypeCategories>
+        <fillTypeCategory name="BULK" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED</fillTypeCategory>
+        <fillTypeCategory name="LIQUID" >MILK WATER DIESEL DEF</fillTypeCategory>
+        <fillTypeCategory name="PIECE" >WOOL TREESAPLINGS EGG</fillTypeCategory>
+        <fillTypeCategory name="WINDROW" >STRAW DRYGRASS_WINDROW GRASS_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="COMBINE" >WHEAT2 BARLEY2 OAT2 CANOLA2 WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="SPRAYER" >LIQUIDFERTILIZER HERBICIDE</fillTypeCategory>
+        <fillTypeCategory name="SPREADER" >FERTILIZER LIME</fillTypeCategory>
+        <fillTypeCategory name="MIXERWAGON" >FORAGE FORAGE_MIXING DRYGRASS_WINDROW SILAGE STRAW MINERAL_FEED WHEAT BARLEY OAT MAIZE</fillTypeCategory>
+        <fillTypeCategory name="AUGERWAGON" >WHEAT BARLEY OAT CANOLA SOYBEAN SUNFLOWER MAIZE FERTILIZER SEEDS LIME SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="FORAGEWAGON" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE</fillTypeCategory>
+        <fillTypeCategory name="SILAGETRAILER" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE WOODCHIPS SUGARCANE</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON" >WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARCANE SUGARBEET POTATO SORGHUM WOODCHIPS OLIVE GRAPE</fillTypeCategory>
+        <fillTypeCategory name="FORAGEHARVESTER" >CHAFF GRASS_WINDROW WOODCHIPS</fillTypeCategory>
+        <fillTypeCategory name="SLURRYTANK" >LIQUIDMANURE DIGESTATE</fillTypeCategory>
+        <fillTypeCategory name="MANURESPREADER" >MANURE</fillTypeCategory>
+        <fillTypeCategory name="FORK" >MANURE SILAGE CHAFF STRAW GRASS_WINDROW DRYGRASS_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM GRAPE OLIVE STONE MINERAL_FEED</fillTypeCategory>
+        <fillTypeCategory name="ANIMAL" >COW_SWISS_BROWN COW_ANGUS COW_HOLSTEIN COW_LIMOUSIN SHEEP_BLACK_WELSH SHEEP_STEINSCHAF SHEEP_SWISS_MOUNTAIN SHEEP_LANDRACE PIG_LANDRACE PIG_BLACK_PIED PIG_BERKSHIRE CHICKEN CHICKEN_ROOSTER</fillTypeCategory>
+        <fillTypeCategory name="HORSE" >HORSE_PALOMINO HORSE_BLACK HORSE_BAY HORSE_PINTO HORSE_SEAL_BROWN HORSE_GRAY HORSE_DUN HORSE_CHESTNUT</fillTypeCategory>
+        <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="HAYLOFT" >STRAW DRYGRASS_WINDROW</fillTypeCategory>
+        <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT_BGA">METHANE ELECTRICCHARGE</fillTypeCategory>
+    </fillTypeCategories>
+
+    <fillTypeSounds>
+        <fillTypeSound isDefault="true">
+            <sound template="DEFAULT_SILO_FILL"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="LIME">
+            <sound template="dustFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="METHANE">
+            <sound template="methaneFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="OAT SUNFLOWER">
+            <sound template="grainSmallFill"/>
+        </fillTypeSound>
+
+<!--        <fillTypeSound fillTypes="WHEAT2 BARLEY2 OAT2 FLAX2 CANOLA2 WHEAT FLAX PEAS LENTILS BARLEY CANOLA SOYBEAN SEEDS FERTILIZER">-->
+        <fillTypeSound fillTypes="WHEAT2 BARLEY2 OAT2 CANOLA2 WHEAT BARLEY CANOLA SOYBEAN SEEDS FERTILIZER">
+            <sound template="grainMediumFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="MAIZE PIGFOOD">
+            <sound template="grainLargeFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="GRAPE">
+            <sound template="grapeFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="OLIVE">
+            <sound template="oliveFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="WOOL GRASS_WINDROW DRYGRASS_WINDROW ROUNDBALE COTTON">
+            <sound template="grassFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="ROADSALT">
+            <sound template="gravelFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="MANURE">
+            <sound template="manureFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="POTATO SUGARBEET">
+            <sound template="potatoFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="STRAW">
+            <sound template="strawFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="SUGARCANE">
+            <sound template="sugarcaneFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="WOODCHIPS FORAGE CHAFF SILAGE SNOW">
+            <sound template="woodchipFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="SNOW">
+            <sound template="snowFill"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="STONE">
+            <sound template="ROCKS_UNLOAD"/>
+        </fillTypeSound>
+
+        <fillTypeSound fillTypes="MILK WATER DIESEL DEF LIQUIDFERTILIZER HERBICIDE LIQUIDMANURE DIGESTATE SILAGE_ADDITIVE">
+            <sound template="DEFAULT_REFUEL_SOUND"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+</map>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="73">
+    <author>Jos, Bcbuhler Farms</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Swathing Addon</en>
+        <de>Schwad-Addon</de>
+    </title>
+	<description>
+		<en><![CDATA[The Swathing Addon brings the swathing features first released on Edgewater Saskatchewan to any map. The swathable fruit types are Wheat, Barley, Oats and Canola.
+
+It will work with any mower to cut crops and create swaths. However mods released with the Swathing Icon are designed to work exclusively with swathing and eliminate those pecky grass swaths sneaking into your fields.
+
+After mowing be sure to use the pickup header to harvest your swaths and enjoy the 20% yield bonus from swathing.
+
+Things to note:
+- The basegame hired worker will not be able to swath or harvest swaths for you. However Courseplay is a great option that can do both jobs if you reuse your swathing course to harvest.
+- May conflict with other crop adjusting mods.
+]]>
+		</en>
+		<de><![CDATA[Das Schwad-Addon bringt die Schwadfunktionen, die zuerst auf der Edgewater Saskatchewan veröffentlicht wurden, auf jede Karte. Die schwadbaren Fruchtarten sind Weizen, Gerste, Hafer und Raps.
+
+Das Addon funktioniert mit jedem Mähwerk, um Feldfrüchte zu mähen und Schwaden zu legen. Die Mods, die mit dem Schwad-Symbol veröffentlicht werden, sind jedoch ausschließlich für das Schwad-System gedacht und verhindern, dass sich unschöne Grasschwaden in Ihre Felder schleichen.
+
+Verwenden Sie nach dem Mähen unbedingt den Erntevorsatz, um Ihre Schwaden zu ernten und den 20%igen Ertragsbonus des Schwad´s zu genießen.
+
+Zu beachten:
+- Die im Basisspiel eingestellten Helfer sind nicht in der Lage, Schwaden für dich zu mähen oder zu ernten. Courseplay ist jedoch eine großartige Option, die beide Aufgaben übernehmen kann, wenn Sie Ihre Schwadbahn zum Ernten wiederverwenden.
+- Kann mit anderen Mods zur Anpassung der Ernte in Konflikt geraten.
+]]>
+		</de>
+	</description>
+    <iconFilename>icon_SwathingAddon.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="scripts/SwathingAddon.lua" />
+    </extraSourceFiles>
+    <dependencies>
+        <dependency>FS22_PickupHeaderPack</dependency>
+    </dependencies>
+</modDesc>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mowerEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/effects/windrower/fillTypes/straw/straw8x4_diffuse.png"/>
+    <File fileId="6" filename="$data/effects/windrower/shared/windrower_alpha.png"/>
+    <File fileId="2" filename="$data/effects/windrower/shared/windrower_normal.png"/>
+    <File fileId="3" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="7" filename="canolastraw8x4_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grass8x4_mat" materialId="4" customShaderId="3" customShaderVariation="subUV_scaleByLife_alphaMap">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+      <CustomParameter name="subUVspeed" value="10 0 0 0"/>
+      <CustomParameter name="subUVelements" value="8 4 1 1"/>
+      <CustomParameter name="sizeScale" value="1 3 0 0"/>
+    </Material>
+    <Material name="straw8x4_mat" materialId="6" customShaderId="3" customShaderVariation="subUV_scaleByLife_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+      <CustomParameter name="subUVspeed" value="10 0 0 0"/>
+      <CustomParameter name="subUVelements" value="8 4 1 1"/>
+      <CustomParameter name="sizeScale" value="1 3 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mower.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="mowerEffects_particleMeshes" nodeId="45">
+        <TransformGroup name="mowerEffects_particleMeshes_meshes" nodeId="46">
+          <TransformGroup name="mowerEffects_particleMeshes_nr6_rl11_root" nodeId="47">
+            <Shape shapeId="1" name="mowerEffects_particleMeshes_nr6_rl11_v1" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="mowerEffects_particleMeshes_nr6_rl11_v2" nodeId="49" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="mowerEffects_particleMeshes_nr6_rl11_v3" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="mowerEffects_particleMeshes_nr6_rl11_v4" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr9_rl11_root" nodeId="52">
+            <Shape shapeId="5" name="mowerEffects_particleMeshes_nr9_rl11_v1" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="mowerEffects_particleMeshes_nr9_rl11_v2" nodeId="54" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="mowerEffects_particleMeshes_nr9_rl11_v3" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="mowerEffects_particleMeshes_nr9_rl11_v4" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr9_rl18_root" nodeId="57">
+            <Shape shapeId="9" name="mowerEffects_particleMeshes_nr9_rl18_v1" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="mowerEffects_particleMeshes_nr9_rl18_v2" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="mowerEffects_particleMeshes_nr9_rl18_v3" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="mowerEffects_particleMeshes_nr9_rl18_v4" nodeId="61" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr10_rl11_root" nodeId="62">
+            <Shape shapeId="13" name="mowerEffects_particleMeshes_nr10_rl11_v1" nodeId="63" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="mowerEffects_particleMeshes_nr10_rl11_v2" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="mowerEffects_particleMeshes_nr10_rl11_v3" nodeId="65" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="mowerEffects_particleMeshes_nr10_rl11_v4" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr11_rl18_root" nodeId="67">
+            <Shape shapeId="17" name="mowerEffects_particleMeshes_nr11_rl18_v1" nodeId="68" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="18" name="mowerEffects_particleMeshes_nr11_rl18_v2" nodeId="69" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="mowerEffects_particleMeshes_nr11_rl18_v3" nodeId="70" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="mowerEffects_particleMeshes_nr11_rl18_v4" nodeId="71" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr16_rl8_root" nodeId="72">
+            <Shape shapeId="21" name="mowerEffects_particleMeshes_nr16_rl8_v1" nodeId="73" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="mowerEffects_particleMeshes_nr16_rl8_v2" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="mowerEffects_particleMeshes_nr16_rl8_v3" nodeId="75" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="24" name="mowerEffects_particleMeshes_nr16_rl8_v4" nodeId="76" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr16_rl18_root" nodeId="77">
+            <Shape shapeId="25" name="mowerEffects_particleMeshes_nr16_rl18_v1" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="mowerEffects_particleMeshes_nr16_rl18_v2" nodeId="79" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="mowerEffects_particleMeshes_nr16_rl18_v3" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="28" name="mowerEffects_particleMeshes_nr16_rl18_v4" nodeId="81" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr21_rl18_root" nodeId="82">
+            <Shape shapeId="29" name="mowerEffects_particleMeshes_nr21_rl18_v1" nodeId="83" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="mowerEffects_particleMeshes_nr21_rl18_v2" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="31" name="mowerEffects_particleMeshes_nr21_rl18_v3" nodeId="85" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="32" name="mowerEffects_particleMeshes_nr21_rl18_v4" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="mowerEffects_particleMeshes_nr30_rl18_root" nodeId="87">
+            <Shape shapeId="33" name="mowerEffects_particleMeshes_nr30_rl18_v1" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="34" name="mowerEffects_particleMeshes_nr30_rl18_v2" nodeId="89" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="35" name="mowerEffects_particleMeshes_nr30_rl18_v3" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="mowerEffects_particleMeshes_nr30_rl18_v4" nodeId="91" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="mowerEffects_particleMeshes_materials" nodeId="92">
+          <Shape shapeId="37" name="straw" static="true" nodeId="93" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="37" name="grass_windrow" static="true" nodeId="94" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

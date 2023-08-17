@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <densityMapHeightTypes firstChannel="0" numChannels="6">
+        <densityMapHeightType fillTypeName="CANOLA_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="WHEAT_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="BARLEY_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="OAT_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+    </densityMapHeightTypes>
+</map>
